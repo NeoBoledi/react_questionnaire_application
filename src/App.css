@@ -1,38 +1,174 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 150px;
+  display: flex;
+  padding: 35px 50px;
+  color: aliceblue;
+}
+
+.nav h2,
+span {
+  cursor: pointer;
+  line-height: 50px;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.nav h2 {
+  color: #000;
+}
+
+/* Sidebar */
+.sidebar_container {
+  background-color: aqua;
+  width: 270px;
+  overflow: hidden;
+}
+
+.nav-opt {
+
+  padding: 20px 20px;
+}
+
+.nav-opt:hover {
+  background-color: aliceblue;
+  color: #000;
+}
+
+.nav-opt button {
+  color: blue;
+  font-size: 45px;
+  border: none;
+  background: transparent;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  line-height: 150px;
+}
+
+.nav-opt button h3 {
+  color: black;
+  font-size: 25px;
+}
+
+.nav-opt .opt Link {
+  text-decoration: none;
+}
+
+/* Main Section */
+.main-container {
+  grid-area: main;
+  overflow: hidden;
+  padding: 20px 20px;
+  background: antiquewhite;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-title {
+  font-size: 30px;
+  line-height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-left: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 10px;
+  width: 400px;
+  height: 180px;
+}
+
+.cards {
+  font-size: 25px;
+}
+
+.cards:first-child {
+  background: yellow;
+}
+
+.cards:nth-child(2) {
+  background: red;
+}
+
+.cards:nth-child(3) {
+  background: orange;
+}
+
+.cards:nth-child(4) {
+  background: greenyellow;
+}
+
+.inner-card {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.inner-card h4 {
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Form */
+
+/* Styles for the form container */
+/* div {
+  text-align: center;
+  margin: 20px;
+} */
+
+/* Styles for the form itself */
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Styles for form headings */
+form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for form input fields */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Styles for the submit button */
+button[type="submit"],
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styles for the submit button on hover */
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }

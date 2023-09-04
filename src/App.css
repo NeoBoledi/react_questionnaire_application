@@ -49,6 +49,7 @@ span {
   gap: 20px;
   align-items: center;
   line-height: 150px;
+  cursor: pointer;
 }
 
 .nav-opt button h3 {
@@ -93,6 +94,8 @@ span {
 
 .cards {
   font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0.5, 0.9);
 }
 
 .cards:first-child {
@@ -171,4 +174,80 @@ button[type="submit"],
 /* Styles for the submit button on hover */
 button[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+.outer-container {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+form {
+  margin-top: 10px;
+  width: 50%;
+  border: none;
+}
+
+.content h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 60px;
+}
+
+.create-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 300px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.container p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons a,
+.icons i {
+  font-size: 24px;
+  margin-left: 10px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.icons a:hover,
+.icons i:hover {
+  color: #0056b3;
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  
 }

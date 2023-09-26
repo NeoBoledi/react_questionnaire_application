@@ -5,9 +5,9 @@
 }
 
 .nav {
-  height: 150px;
+  height: 100px;
   display: flex;
-  padding: 35px 50px;
+  justify-content: center;
   color: aliceblue;
 }
 
@@ -17,6 +17,7 @@ span {
   line-height: 50px;
   font-size: 45px;
   font-weight: 900;
+  color: aliceblue;
 }
 
 .nav h2 {
@@ -25,14 +26,13 @@ span {
 
 /* Sidebar */
 .sidebar_container {
-  background-color: aqua;
-  width: 270px;
+  background-color: rgb(255, 0, 0);
+  width: 250px;
   overflow: hidden;
 }
 
 .nav-opt {
-
-  padding: 20px 20px;
+  padding: 10px 10px;
 }
 
 .nav-opt:hover {
@@ -42,13 +42,14 @@ span {
 
 .nav-opt button {
   color: blue;
-  font-size: 45px;
+  font-size: 40px;
   border: none;
   background: transparent;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   line-height: 150px;
+  cursor: pointer;
 }
 
 .nav-opt button h3 {
@@ -60,115 +61,172 @@ span {
   text-decoration: none;
 }
 
-/* Main Section */
+/* Dashboard Component Styles */
 .main-container {
-  grid-area: main;
-  overflow: hidden;
-  padding: 20px 20px;
-  background: antiquewhite;
-  width: 100%;
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .main-title {
-  font-size: 30px;
-  line-height: 200px;
-}
-
-.main-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  padding-left: 200px;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 8px 10px;
-  width: 400px;
-  height: 180px;
-}
-
-.cards {
-  font-size: 25px;
-}
-
-.cards:first-child {
-  background: yellow;
-}
-
-.cards:nth-child(2) {
-  background: red;
-}
-
-.cards:nth-child(3) {
-  background: orange;
-}
-
-.cards:nth-child(4) {
-  background: greenyellow;
-}
-
-.inner-card {
-  align-items: center;
-  justify-content: space-between;
-}
-
-.inner-card h4 {
-  font-size: 20px;
-}
-
-/* Form */
-
-/* Styles for the form container */
-/* div {
   text-align: center;
-  margin: 20px;
-} */
-
-/* Styles for the form itself */
-form {
-  width: 300px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-/* Styles for form headings */
-form h2 {
-  font-size: 24px;
   margin-bottom: 20px;
 }
 
-/* Styles for form input fields */
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 16px;
+.main-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* Styles for the submit button */
-button[type="submit"],
-.btn {
+.cards {
+  flex-basis: calc(50% - 20px);
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.inner-card {
   background-color: #007bff;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 0;
+}
+
+
+/* Style for the outer container */
+.outer-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the main title */
+.main-title {
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 70px;
+}
+
+/* Style for the "Add Queries" section */
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.textbox {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 3px;
+  padding: 10px 20px;
   cursor: pointer;
+  border-radius: 5px;
   font-size: 16px;
 }
 
-/* Styles for the submit button on hover */
-button[type="submit"]:hover {
-  background-color: #0056b3;
+/* Style for the list of questions */
+h2 {
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.create-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.icons a,
+.icons i {
+  font-size: 20px;
+  margin-left: 10px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Pagination styles */
+
+.pagination span {
+  font-size: 0px;
+  padding: 10px;
+  margin: 5px 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.pagination span.active {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.pagination button {
+  margin-left: 10px;
+}
+
+/* Message style for no queries in the database */
+p {
+  font-size: 16px;
+  text-align: center;
+  color: #888;
+}
+
+.radio {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
 }

@@ -9,12 +9,13 @@ function Sidebar() {
         onClick={({ id }) => {
             Navigate(id);
         }}
+
     </>
     return (
         <div className='container'>
             <div className='sidebar_container'>
                 <nav className='nav'>
-                    <h2 className='logo'>N</h2><span>EO</span>
+                    <h2 className='logo'>N<span>EO</span></h2>
                 </nav>
                 <div className='sidebar_content'>
                     <div className='nav-opt opt'>
